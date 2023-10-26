@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .body {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
@@ -21,4 +22,8 @@
 
 .page-footer {
 
+=======
+h1 {
+    color: red;
+>>>>>>> 4ebf5cc7b9150aee8d8bc0b5203e73e1423516ec
 }
