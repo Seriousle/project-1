@@ -8,6 +8,23 @@
 
 
 .page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &::before{
+        content: "";
+        position: absolute;
+        
+    }
+}
+
+.page-header_nav {
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1414px;
+    width: 100%;
 
 }
 
@@ -18,9 +35,43 @@
     font-size: 18px;
     line-height: 25px;
     text-decoration: none;
+    text-align: center;
+
 }
 
+.page-header_user-button {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 15px 40px;
+    background-color: transparent;
+    border: 1px solid #1f1e1e;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 600;
+    color: #1f1e1e;
+}
+
+.page-header_nav {
+    display: inline-block;
+    margin-right: 230px;
+}
+
+.home {
+    padding-top: 147px;
+}
+
+.main-header_title {
+    margin: 0 0 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    font-family: '';
+}
+
+.main-header {
+    padding: 100px 0;
+}
 
 .page-footer {
-
+    
 }
