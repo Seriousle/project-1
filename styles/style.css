@@ -12,12 +12,47 @@
     top: 0;
     left: 0;
     width: 100%;
-    &::before{
-        content: "";
-        position: absolute;
-        
-        
+    height: 147px;
+    z-index: 100%;
+}
+
+.page-header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(222, 222, 222, 0.50);
+    @supports (backdrop-filter: blur(10px)) {
+        backdrop-filter: blur(10px);
+        background-color: rgba(222, 222, 222, 0.50);
     }
+}
+
+.page-header_container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1414px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.page-header_logo {
+    margin-right: 237px;
+    display: inline-block;
+    width: 202px;
+    height: 147px;
+}
+
+.page-header_logo_img {
+    width: 100%;
+    height: 100%;
 }
 
 .page-header_nav {
@@ -25,7 +60,8 @@
     padding-left: 40px;
     padding-right: 40px;
     max-width: 1414px;
-    width: 100%;
+
+    margin-right: 150px;
 
 }
 
@@ -50,27 +86,68 @@
     line-height: normal;
     font-weight: 600;
     color: #1f1e1e;
+    
 }
 
-.page-header_nav {
-    display: inline-block;
-    margin-right: 230px;
-}
+
 
 .home {
     padding-top: 147px;
 }
 
-.main-header_title {
-    margin: 0 0 70px;
+.main-header {
+    padding: 100px 0;
+
+}
+
+.main-header_picture {
+    display: block;
+    margin-bottom: 70px;
+    position: relative;
+    width: 100%;
+
+}
+
+.main-header_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.main-header_picture::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-top: 16.927%;
+}
+
+.main-header_title,
+.main-header_text {
     padding-left: 40px;
     padding-right: 40px;
     text-align: center;
-    font-family: '';
+    text-transform: uppercase;
+    font-family: 'Lora', sans-serif;
+    line-height: normal;
+    font-weight: 400;
+    font-size: 45px;
+    color: #1f1e1e;
 }
 
-.main-header {
-    padding: 100px 0;
+.main-header_title {
+    margin: 0 0 70px;
+
+}
+
+.main-header_text {
+    margin: 0 auto;
+    max-width: 940px;
+    width: 100%;
+
 }
 
 .page-footer {
