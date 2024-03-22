@@ -49,7 +49,7 @@ function includeHtml() {
     .pipe(
         include({
             prefix: "@@",
-            basepath: "@file",
+            basepath: "@file"
         })
     )
     .pipe(formatHTML())
