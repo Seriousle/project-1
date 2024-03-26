@@ -8,15 +8,15 @@
 
         <main class="main">
             <div class="events">
-                <div class="events_container">
-                    <h2 class="events_title title">Мероприятия</h2>
+                <section class="listing events_listing">
+                    <h2 class="listing_title section-title-one">Мероприятия</h2>
 
-                    <div class="events_list listing">
+                    <div class="listing_events-list">
 
                         <!-- prettier-ignore -->
                         @@loop('blocks/event-card.html', [
                             {
-                                "class": "listing__event-card",
+                                "class": "listing_event-card",
                                 "img": "assets/images/events/Nirvana.jpg",
                                 "img_webp": "assets/images/events/Nirvana.webp",
                                 "alt": "Nirvana",
@@ -26,7 +26,7 @@
                                 "datetime": "2022-12-07T18:00"
                             },
                             {
-                                "class": "listing__event-card",
+                                "class": "listing_event-card",
                                 "img": "assets/images/events/HowStuffWorks.jpg",
                                 "img_webp": "assets/images/events/HowStuffWorks.webp",
                                 "alt": "HowStuffWorks",
@@ -36,7 +36,7 @@
                                 "datetime": "2022-12-14T18:30"
                             },
                             {
-                                "class": "listing__event-card",
+                                "class": "listing_event-card",
                                 "img": "assets/images/events/Sade.jpg",
                                 "img_webp": "assets/images/events/Sade.webp",
                                 "alt": "Sade",
@@ -46,7 +46,7 @@
                                 "datetime": "2022-12-16T20:00"
                             },
                             {
-                                "class": "listing__event-card",
+                                "class": "listing_event-card",
                                 "img": "assets/images/events/Malevich.jpg",
                                 "img_webp": "assets/images/events/Malevich.webp",
                                 "alt": "Malevich",
@@ -56,17 +56,17 @@
                                 "datetime": "2022-12-23T20:30"
                             },
                             {
-                                "class": "listing__event-card",
-                                "img": "assets/images/events/Tatler.jpg",
-                                "img_webp": "assets/images/events/Tatler.webp",
-                                "alt": "Tatler",
+                                "class": "listing_event-card",
+                                "img": "assets/images/events/tatler.jpg",
+                                "img_webp": "assets/images/events/tatler.webp",
+                                "alt": "tatler",
                                 "title": "Фотографы издания расскажут, как им удается создавать потрясающие кадры и что может испортить весь процесс.",
                                 "descr": "Это третий альбом группы...",
                                 "time": "25.12.2022 | начало 13.00",
                                 "datetime": "2022-12-25T13:00"
                             },
                             {
-                                "class": "listing__event-card",
+                                "class": "listing_event-card",
                                 "img": "assets/images/events/the hatters.jpg",
                                 "img_webp": "assets/images/events/the hatters.webp",
                                 "alt": "the hatters",
@@ -80,7 +80,7 @@
 
 
                     </div>
-                </div>
+                </section>
             </div>
         
         </main>
