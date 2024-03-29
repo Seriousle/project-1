@@ -159,9 +159,14 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 405px;
-  width: calc(33.333% - 40px);
-  margin: 0 30px 120px;
+  /*    &_picture::before {
+        content: "";
+        display: block;
+        width: 100%;
+        padding-top: 107.160%;
+        
+    }
+*/
 }
 .event-card_link {
   margin: 0;
@@ -183,12 +188,6 @@ textarea {
   position: relative;
   display: block;
   margin-bottom: 25px;
-}
-.event-card_picture::before {
-  content: "";
-  display: block;
-  width: 100%;
-  padding-top: 107.16%;
 }
 .event-card_picture-img {
   position: absolute;
@@ -254,7 +253,7 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 -30px -120px;
+  margin: -60px -120px;
 }
 .events {
   padding: 140px 0 100px;
@@ -393,6 +392,14 @@ textarea {
   margin: 0 auto;
   max-width: 940px;
   width: 100%;
+}
+.pp_container {
+  width: 595px;
+  height: 80px;
+  top: -40px;
+  left: 85px;
+  background-color: #1f1e1e;
+  color: #ffffff;
 }
 .home {
   padding: 100px 0;
