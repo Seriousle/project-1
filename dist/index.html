@@ -84,9 +84,9 @@
   <div class="pp" id="eventPP">
     <div class="pp_wrapper">
       <div class="pp_sticky-close">
-        <button class="pp_x-btn x-btn">
-          <svg class="x-btn_icon" width="12" height="12">
-            <use xlink:href="assets/iccons/symbols.svg#x"></use>
+        <button type="button" class="pp_sticky-btn x-btn">
+          <svg class="pp_btn_icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#x"></use>
           </svg>
         </button>
       </div>
@@ -96,7 +96,64 @@
           <br />и мы подберем площадку
         </h2>
         <form class="pp_form form">
+          <div class="pp_list">
+            <div class="form_field field">
+              <h6 class="field_title">
+                Формат мероприятия:
+              </h6>
+              <div class="field_radio radio">
+                <label class="radio_label">
+                  <input type="radio" name="format" value="seminar" class="radio_input" checked />
+                  <span class="radio_mark"></span>
+                  <span class="radio_name">Мастер класс/семинар</span>
+                </label>
+                <label class="radio_label">
+                  <input type="radio" name="format" value="concert" class="radio_input" />
+                  <span class="radio_mark"></span>
+                  <span class="radio_name">Концерты/выступление</span>
+                </label>
+                <label class="radio_label">
+                  <input type="radio" name="format" value="show" class="radio_input" />
+                  <span class="radio_mark"></span>
+                  <span class="radio_name">Выставка/показ</span>
+                </label>
+                <label class="radio_label">
+                  <input type="radio" name="format" value="other" class="radio_input" />
+                  <span class="radio_mark"></span>
+                  <span class="radio_name">Другое</span>
+                </label>
+              </div>
+            </div>
 
+            <div class="form_group">
+              <div class="fomr_field field">
+                <h6 class="field_title">Планируемое количество посетителей:</h6>
+                <select name="amount" class="field_select">
+                  <option value="20">
+                    до 20 человек
+                  </option>
+                  <option value="100">
+                    от 20 человек до 100 человек
+                  </option>
+                  <option value="500">
+                    от 100 человек до 500 человек
+                  </option>
+                  <option value="501">
+                    более 500 человек
+                  </option>
+                </select>
+              </div>
+              <div class="form_field field">
+                <h6 class="field_title">Дата проведения:</h6>
+                <div class="field_inputs">
+                  <input class="field_input field_input--w55" type="text" placeholder="ДД" />
+                  <input class="field_input field_input--w55" type="text" placeholder="ММ" />
+                  <input class="field_input field_input--w110" type="text" placeholder="ГГГГ">
+                </div>
+              </div>
+            </div>
+
+          </div>
         </form>
       </div>
 
