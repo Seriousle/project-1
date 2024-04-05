@@ -202,6 +202,14 @@ textarea {
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
+.radio_name {
+  display: block;
+  margin-left: 23px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
 .field_title {
   margin: 0 0 10px;
   font-weight: 700;
@@ -219,23 +227,31 @@ textarea {
   display: flex;
   gap: 15px;
 }
+.field_select,
 .field_input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: none;
   height: 55px;
   width: 100%;
+  border: none;
   border-radius: 5px;
   background-color: #ffffff;
+  font-size: 16px;
+  padding: 17px 20px 16px;
+}
+.field_input {
   padding: 17px 20px 16px;
   color: #1f1e1e;
-  font-weight: 16px;
 }
 .field_input--w55 {
   width: 55px;
 }
 .field_input--w110 {
   width: 110px;
+}
+.field_input--datetime {
+  padding: 17px 13px 16px;
+  text-align: center;
 }
 .field_input::-webkit-input-placeholder {
   font-size: 16px;
@@ -257,16 +273,11 @@ textarea {
   font-size: 16px;
   color: #6c6c6c;
 }
-.form_title {
-  margin: 0 0 10px;
-  font-weight: 700;
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  line-height: 25px;
-  color: #1f1e1e;
-}
-.form_title--mb7 {
-  margin-bottom: 7px;
+.form_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
 }
 .event-card {
   -webkit-box-sizing: border-box;
@@ -536,9 +547,17 @@ textarea {
 .pp_container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 1210px;
   width: 100%;
   margin: auto;
+  padding: 70px 40px 40px;
   background-color: #dedede;
   background-image: url(../assets/images/noise.png);
   background-repeat: repeat;
@@ -546,7 +565,7 @@ textarea {
   background-size: auto;
 }
 .pp_title {
-  margin: -40 0 0;
+  margin: -110px 0 70px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px 84px;
@@ -562,12 +581,15 @@ textarea {
 }
 .pp_sticky-close {
   position: sticky;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   top: 0;
+  width: 0;
 }
 .pp_sticky-btn {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -70px;
+  top: -100px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -588,6 +610,9 @@ textarea {
   color: #ffffff;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
+}
+.pp_form {
+  max-width: 870px;
 }
 .home {
   padding: 100px 0;

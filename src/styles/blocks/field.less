@@ -18,22 +18,37 @@
 
     }
 
+    &_select,
     &_input {
         box-sizing: border-box;
-        border: none;
         height: 55px;
         width: 100%;
+        border: none;
         border-radius: 5px;
         background-color: @white;
+        font-size: 16px;
+        padding: 17px 20px 16px;
+    }
+
+    &_input {
+        
         padding: 17px 20px 16px;
         color: @black;
-        font-weight: 16px;
+        
         &--w55 {
-            width: 55px;
+            width: 55px; 
+        
         }
         &--w110 {
             width: 110px;
+        
         }
+
+        &--datetime {
+            padding: 17px 13px 16px;
+            text-align: center;
+        }
+
         &::placeholder {
             font-size: 16px;
             color: #6c6c6c;
