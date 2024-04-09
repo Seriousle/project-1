@@ -30,9 +30,10 @@
         padding: 17px 20px 16px;
     }
 
+    &_textarea {
+        height: 150px;
+    }
     &_input {
-        
-        padding: 17px 20px 16px;
         color: @black;
         
         &--w55 {
@@ -52,6 +53,23 @@
         &::placeholder {
             font-size: 16px;
             color: #6c6c6c;
+        }
+    }
+
+    &_label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 16px;
+        line-height: 22px;
+        color: @black;
+        
+        &--textarea {
+        
+            font-weight: 700;
+            font-family: @font1;
+            font-size: 18px;
+            line-height: 25px;
+            color: @black;
         }
     }
 }

@@ -82,7 +82,7 @@
   <footer class="page-footer"></footer>
 
   <div class="pp" id="eventPP">
-    <div class="pp_wrapper">
+    <div class="pp_container">
       <div class="pp_sticky-close">
         <button type="button" class="pp_sticky-btn">
           <svg class="pp_btn-icon" width="24" height="24">
@@ -91,13 +91,13 @@
         </button>
       </div>
 
-      <div class="pp_container">
+      <div class="pp_wrapper">
         <h2 class="pp_title">Заполните форму
           <br />и мы подберем площадку
         </h2>
-        <form class="pp_form form">
+        <div class="pp_form form">
           <div class="form_list">
-            <div class="form_field field">
+            <div class="form_field form_field--w50 field">
               <h6 class="field_title">
                 Формат мероприятия:
               </h6>
@@ -126,7 +126,7 @@
             </div>
 
             <div class="form_group">
-              <div class="fomr_field field">
+              <div class="form_field form_field--mb30 field">
                 <h6 class="field_title">Планируемое количество посетителей:</h6>
                 <select name="amount" class="field_select">
                   <option value="20">
@@ -154,7 +154,68 @@
             </div>
 
           </div>
-        </form>
+          <div class="form_section">
+            <h6 class="field_title">
+              Контактные данные:
+            </h6>
+            <div class="form_list form_list--mb50">
+              <label class="form_field form_field--w50 field">
+                <span class="field_label">
+                  Имя*
+                </span>
+                <input type="text" class="field_input" placeholder="Имя" name="name" required />
+              </label>
+              <label class="form_field form_field--w50 field">
+                <span class="field_label">
+                  Фамилия*
+                </span>
+                <input type="text" class="field_input" placeholder="Фамилия" name="last_name" required />
+              </label>
+              <label class="form_field form_field--w50 field">
+                <span class="field_label">
+                  Телефон*
+                </span>
+                <input type="tel" class="field_input" placeholder="+7()__ __ __" name="phone" required />
+
+              </label>
+              <label class="form_field form_field--w50 field">
+                <span class="field_label">
+                  Emall*
+                </span>
+                <input type="email" class="field_input" placeholder="Email" name="Email" required />
+
+              </label>
+            </div>
+
+
+            <label class="form_field form_field--mb30 field">
+              <span class="field_label field_label--textarea">
+                Есть пожелания? Напишите нам:
+              </span>
+              <textarea class="field_textarea" name="wish"></textarea>
+            </label>
+
+
+            <label class="form_check form_check--mb40 check">
+              <input type="checkbox" class="check_input" name="agree" required />
+              <span class="check_mark"></span>
+              <span class="check_label">
+                Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных
+              </span>
+
+            </label>
+
+            <div class="form_btns">
+              <button type="submit" class="form_btn btn">
+                Отправить
+              </button>
+              <button type="button">
+                Закрыть
+              </button>
+            </div>
+          </div>
+
+        </div>
       </div>
 
     </div>

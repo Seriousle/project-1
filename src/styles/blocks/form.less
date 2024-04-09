@@ -2,8 +2,41 @@
 
     &_list {
         display: flex;
-        gap: 60px;
+        flex-wrap: wrap;
+        width: 100%;
+        row-gap: 30px;
+        column-gap: 60px;
+        &--mb50 {
+            margin-bottom: 50px;
+        }
+    }
 
+
+    &_group {
+        width: calc(50% - 30px);
+    }
+
+    &_field {
+        
+        width: 100%;
+        &--w50 {
+            width: calc(50% - 30px);
+        }
+
+        &--mb30{
+            margin-bottom: 30px;
+        }
+    }
+    &_btn {
+        max-width: 400px;
+        width: 100%;
+        
+    }
+
+    &_check {
+        &--mb40 {
+            margin-bottom: 40px;
+        }
     }
 
 

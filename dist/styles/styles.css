@@ -210,6 +210,59 @@ textarea {
   font-size: 16px;
   line-height: 22px;
 }
+.check {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  padding-left: 40px;
+  display: block;
+}
+.check_input {
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+.check_input:checked {
+  border-color: #1f1e1e;
+}
+.check_input:checked::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  width: 6px;
+  height: 12px;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.check_mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #1f1e1e;
+  border-color: transparent;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.check_label {
+  font-size: 14px;
+  color: #1f1e1e;
+}
 .field_title {
   margin: 0 0 10px;
   font-weight: 700;
@@ -239,8 +292,10 @@ textarea {
   font-size: 16px;
   padding: 17px 20px 16px;
 }
+.field_textarea {
+  height: 150px;
+}
 .field_input {
-  padding: 17px 20px 16px;
   color: #1f1e1e;
 }
 .field_input--w55 {
@@ -273,11 +328,53 @@ textarea {
   font-size: 16px;
   color: #6c6c6c;
 }
+.field_label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1f1e1e;
+}
+.field_label--textarea {
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1f1e1e;
+}
 .form_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  row-gap: 30px;
+  -webkit-column-gap: 60px;
+     -moz-column-gap: 60px;
+          column-gap: 60px;
+}
+.form_list--mb50 {
+  margin-bottom: 50px;
+}
+.form_group {
+  width: calc(50% - 30px);
+}
+.form_field {
+  width: 100%;
+}
+.form_field--w50 {
+  width: calc(50% - 30px);
+}
+.form_field--mb30 {
+  margin-bottom: 30px;
+}
+.form_btn {
+  max-width: 400px;
+  width: 100%;
+}
+.form_check--mb40 {
+  margin-bottom: 40px;
 }
 .event-card {
   -webkit-box-sizing: border-box;
@@ -612,6 +709,7 @@ textarea {
   transition: background-color 0.2s;
 }
 .pp_form {
+  margin: auto;
   max-width: 870px;
 }
 .home {
