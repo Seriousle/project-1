@@ -68,7 +68,21 @@
 
       </header>
       <section class="offers home_offers"></section>
-      <section class="about home_about"></section>
+
+      <section class="about @@class">
+        <h2 class="about_section-title section-title-one">О нас</h2>
+        <div class="about_block">
+          <h3 class="about_title">Проект «Millennials»</h3>
+          <p class="about_text">Вдохновлен молодыми идейными людьми, увлеченными творчеством, эмоциями и желанием сделать
+            мир лучше, проявить себя. У них есть талант и стремление, у нас
+            возможность помочь им воплотить их мечту в реальность.
+          </p>
+          <picture class="about_picture">
+            <img class="about_img" src="assets/images/about/first" />
+          </picture>
+        </div>
+      </section>
+
       <section class="upcoming home_upcoming"></section>
       <section class="listing home_listing"></section>
       <section class="contacts home_contacts"></section>
@@ -78,6 +92,318 @@
 
   </main>
 
+
+  <!DOCTYPE html>
+  <html lang="ru">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lenni Art</title>
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body class="body">
+
+    <header class="page-header">
+      <div class="page-header_container">
+        <a href="index.html" class="page-header_logo">
+
+          <!--<svg xmlns="http://www.w3.org/2000/svg" width="202" height="147" viewBox="0 0 202 147" fill="none">
+                    <rect width="147" height="147" fill="#1F1E1E"/>
+                    <path d="M39.9655 72.439H26.6335V50.032H26.6005V49.999H21.9145V73H39.9655V72.439Z" fill="white"/>
+                    <path d="M43.9316 73H62.0486V72.439H48.6176V61.285H59.1116V60.691H48.6176V50.56H62.0486V49.999H43.9316V73Z" fill="white"/>
+                    <path d="M70.6993 73V50.56C73.5703 50.56 82.4143 51.649 83.0743 64.453V73H87.7603V49.999H83.0743V60.328C81.6553 54.19 77.1673 49.999 70.6993 49.999H66.0133V73H70.6993Z" fill="white"/>
+                    <path d="M97.3893 73V50.56C100.26 50.56 109.104 51.649 109.764 64.453V73H114.45V49.999H109.764V60.328C108.345 54.19 103.857 49.999 97.3893 49.999H92.7033V73H97.3893Z" fill="white"/>
+                    <path d="M119.393 73H124.079V49.999H119.393V73Z" fill="white"/>
+                    <rect x="81" y="92" width="121" height="42" fill="#BC3324"/>
+                    <path d="M108.922 124H109.462L112.402 115.45H120.952L124.282 124H128.752L120.652 103.09H116.122L108.922 124ZM116.422 103.75L120.772 114.94H112.582L116.422 103.75Z" fill="white"/>
+                    <path d="M132.644 103.09V124H136.904V116.77H141.974L146.864 123.97H151.724L146.564 116.32C149.564 115.54 151.844 113.68 151.844 109.51C151.844 104.29 148.034 102.64 143.594 102.64C138.914 102.64 137.564 106.15 136.904 110.05V103.09H132.644ZM138.074 107.47C138.884 104.53 140.984 103.33 142.844 103.18C147.314 102.76 147.494 105.61 147.494 109.51C147.494 115.84 144.134 116.26 141.254 116.26H136.904C136.904 116.26 136.784 112.12 138.074 107.47Z" fill="white"/>
+                    <path d="M162.084 103.6L162.114 124H166.374V103.6H174.984V103.09H153.474V103.6H162.084Z" fill="white"/>
+                </svg> -->
+          <svg class="page-header_logo_img" width="202" height="147">
+            <use xlink:href="assets/icons/symbols.svg#logo">
+
+          </svg>
+
+
+        </a>
+        <nav class="page-header_nav nav">
+          <a href="#" class="page-header_nav_link">Мероприятия</a>
+          <a href="#" class="page-header_nav_link">Блог</a>
+          <a href="#" class="page-header_nav_link">О нас</a>
+          <a href="#" class="page-header_nav_link">Контакты</a>
+
+        </nav>
+        <a href="#" class="button page-header_user-button">Войти</a>
+      </div>
+
+
+
+    </header>
+
+    <main class="main">
+      <div class="events">
+        <section class="listing events_listing">
+          <h2 class="listing_title section-title-one">Мероприятия</h2>
+
+          <div class="listing_events-list">
+
+            <!-- prettier-ignore -->
+            <article class="event-card listing_event-card">
+              <a href="#" class="event-card_link">
+                <picture class="event-card_picture">
+                  <source type="image/webp" srcset="assets/images/events/Nirvana.webp" />
+
+                  <img src="assets/images/events/Nirvana.jpg" alt="Nirvana" class="event-card_img" />
+                </picture>
+
+                <h4 class="event-card_title">Собираемся и слушаем альбом Nirvana</h4>
+
+                <p class="event-card_description">Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
+
+                <time datetime="2022-12-07T18:00" class="event-card_time">07.12.2022 | начало 18.00</time>
+
+              </a>
+            </article>
+            <article class="event-card listing_event-card">
+              <a href="#" class="event-card_link">
+                <picture class="event-card_picture">
+                  <source type="image/webp" srcset="assets/images/events/HowStuffWorks.webp" />
+
+                  <img src="assets/images/events/HowStuffWorks.jpg" alt="HowStuffWorks" class="event-card_img" />
+                </picture>
+
+                <h4 class="event-card_title">Есть тема, нужно обсудить с HowStuffWorks</h4>
+
+                <p class="event-card_description">Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи: от игрушек до водяных дамб.</p>
+
+                <time datetime="2022-12-14T18:30" class="event-card_time">14.12.2022 | начало 18.30</time>
+
+              </a>
+            </article>
+            <article class="event-card listing_event-card">
+              <a href="#" class="event-card_link">
+                <picture class="event-card_picture">
+                  <source type="image/webp" srcset="assets/images/events/Sade.webp" />
+
+                  <img src="assets/images/events/Sade.jpg" alt="Sade" class="event-card_img" />
+                </picture>
+
+                <h4 class="event-card_title">Вечер | The Best of Sade</h4>
+
+                <p class="event-card_description">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-н-блюза, фанка и софт-рока</p>
+
+                <time datetime="2022-12-16T20:00" class="event-card_time">16.12.2022 | начало 20.00</time>
+
+              </a>
+            </article>
+            <article class="event-card listing_event-card">
+              <a href="#" class="event-card_link">
+                <picture class="event-card_picture">
+                  <source type="image/webp" srcset="assets/images/events/Malevich.webp" />
+
+                  <img src="assets/images/events/Malevich.jpg" alt="Malevich" class="event-card_img" />
+                </picture>
+
+                <h4 class="event-card_title">Выставка Малевича в Томске</h4>
+
+                <p class="event-card_description">Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче. Экспозиция займёт два этажа павильона.</p>
+
+                <time datetime="2022-12-23T20:30" class="event-card_time">23.12.2022 | начало 20.00</time>
+
+              </a>
+            </article>
+            <article class="event-card listing_event-card">
+              <a href="#" class="event-card_link">
+                <picture class="event-card_picture">
+                  <source type="image/webp" srcset="assets/images/events/tatler.webp" />
+
+                  <img src="assets/images/events/tatler.jpg" alt="tatler" class="event-card_img" />
+                </picture>
+
+                <h4 class="event-card_title">Фотографы издания расскажут, как им удается создавать потрясающие кадры и что может испортить весь процесс.</h4>
+
+                <p class="event-card_description">Это третий альбом группы...</p>
+
+                <time datetime="2022-12-25T13:00" class="event-card_time">25.12.2022 | начало 13.00</time>
+
+              </a>
+            </article>
+            <article class="event-card listing_event-card">
+              <a href="#" class="event-card_link">
+                <picture class="event-card_picture">
+                  <source type="image/webp" srcset="assets/images/events/hatters.webp" />
+
+                  <img src="assets/images/events/hatters.jpg" alt="hatters" class="event-card_img" />
+                </picture>
+
+                <h4 class="event-card_title">Повеселимся на славу на концерте The Hatters</h4>
+
+                <p class="event-card_description">Российская джипси-фолк-рок группа, основанная в 2016 году в Санкт-Петербурге. В основной состав группы входят Юрий Музыченко.</p>
+
+                <time datetime="2022-12-27T10:00" class="event-card_time">27.12.2022 | начало 10.00</time>
+
+              </a>
+            </article>
+
+
+          </div>
+        </section>
+      </div>
+
+    </main>
+
+    <footer class="page-footer"></footer>
+
+    <div class="pp" id="eventPP">
+      <div class="pp_container">
+        <div class="pp_sticky-close">
+          <button type="button" class="pp_sticky-btn">
+            <svg class="pp_btn-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#x"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="pp_wrapper">
+          <h2 class="pp_title">Заполните форму
+            <br />и мы подберем площадку
+          </h2>
+          <div class="pp_form form">
+            <div class="form_list">
+              <div class="form_field form_field--w50 field">
+                <h6 class="field_title">
+                  Формат мероприятия:
+                </h6>
+                <div class="field_radio radio">
+                  <label class="radio_label">
+                    <input type="radio" name="format" value="seminar" class="radio_input" checked />
+                    <span class="radio_mark"></span>
+                    <span class="radio_name">Мастер класс/семинар</span>
+                  </label>
+                  <label class="radio_label">
+                    <input type="radio" name="format" value="concert" class="radio_input" />
+                    <span class="radio_mark"></span>
+                    <span class="radio_name">Концерты/выступление</span>
+                  </label>
+                  <label class="radio_label">
+                    <input type="radio" name="format" value="show" class="radio_input" />
+                    <span class="radio_mark"></span>
+                    <span class="radio_name">Выставка/показ</span>
+                  </label>
+                  <label class="radio_label">
+                    <input type="radio" name="format" value="other" class="radio_input" />
+                    <span class="radio_mark"></span>
+                    <span class="radio_name">Другое</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form_group">
+                <div class="form_field form_field--mb30 field">
+                  <h6 class="field_title">Планируемое количество посетителей:</h6>
+                  <select name="amount" class="field_select">
+                    <option value="20">
+                      до 20 человек
+                    </option>
+                    <option value="100">
+                      от 20 человек до 100 человек
+                    </option>
+                    <option value="500">
+                      от 100 человек до 500 человек
+                    </option>
+                    <option value="501">
+                      более 500 человек
+                    </option>
+                  </select>
+                </div>
+                <div class="form_field field">
+                  <h6 class="field_title">Дата проведения:</h6>
+                  <div class="field_inputs">
+                    <input class="field_input field_input--w55 field_input--datetime" type="text" placeholder="ДД" />
+                    <input class="field_input field_input--w55 field_input--datetime" type="text" placeholder="ММ" />
+                    <input class="field_input field_input--w110 field_input--datetime" type="text" placeholder="ГГГГ">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="form_section">
+              <h6 class="field_title">
+                Контактные данные:
+              </h6>
+              <div class="form_list form_list--mb50">
+                <label class="form_field form_field--w50 field">
+                  <span class="field_label">
+                    Имя*
+                  </span>
+                  <input type="text" class="field_input" placeholder="Имя" name="name" required />
+                </label>
+                <label class="form_field form_field--w50 field">
+                  <span class="field_label">
+                    Фамилия*
+                  </span>
+                  <input type="text" class="field_input" placeholder="Фамилия" name="last_name" required />
+                </label>
+                <label class="form_field form_field--w50 field">
+                  <span class="field_label">
+                    Телефон*
+                  </span>
+                  <input type="tel" class="field_input" placeholder="+7( )__ __ __" name="phone" required />
+
+                </label>
+                <label class="form_field form_field--w50 field">
+                  <span class="field_label">
+                    Emall*
+                  </span>
+                  <input type="email" class="field_input" placeholder="Email" name="Email" required />
+
+                </label>
+              </div>
+
+
+              <label class="form_field form_field--mb30 field">
+                <span class="field_label field_label--textarea">
+                  Есть пожелания? Напишите нам:
+                </span>
+                <textarea class="field_textarea" name="wish"></textarea>
+              </label>
+
+
+              <label class="form_check form_check--mb40 check">
+                <input type="checkbox" class="check_input" name="agree" required />
+                <span class="check_mark"></span>
+                <span class="check_label">
+                  Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных
+                </span>
+
+              </label>
+
+
+              <div class="form_btns">
+                <button type="submit" class="form_btn btn">
+                  Отправить
+                </button>
+                <button type="submit" class="form_btnz form_btn--bn btn">
+                  Закрыть
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+
+  </html>
 
   <footer class="page-footer"></footer>
 
@@ -205,11 +531,12 @@
 
             </label>
 
+
             <div class="form_btns">
               <button type="submit" class="form_btn btn">
                 Отправить
               </button>
-              <button type="button">
+              <button type="submit" class="form_btnz form_btn--bn btn">
                 Закрыть
               </button>
             </div>

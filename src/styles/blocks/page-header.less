@@ -48,6 +48,11 @@
         line-height: 25px;
         text-decoration: none;
         text-align: center;
+        transition: color 0.2s;
+
+        &:hover {
+            color: @red;
+        }
     }
 
     &_logo_img {
@@ -61,10 +66,18 @@
         padding: 15px 40px;
         background-color: transparent;
         border: 1px solid @black;
+        
         font-size: 16px;
         line-height: normal;
         font-weight: 600;
-        color: #1f1e1e;
+        color: @black;
+        display: inline-flex;
+        transition: color 0.2s, background-color 0.2s;
+
+        &:active {
+            background-color: @black;
+            color: @white;
+        }
         
     }
 

@@ -5,20 +5,26 @@
     display: block;
 
     &_input {
+
+        .is-hidden;
         
         &:checked {
-            border-color: @black;
-            &::after {
-                content: '';
-                display: block;
-                position: absolute;
-                top: 2px;
-                left: 7px;
-                width: 6px;
-                height: 12px;
-                border-bottom: 2px solid @white;
-                border-right: 2px solid @white;
-                transform: rotate(45deg);
+            & ~ .check_mark {
+                background-color: @black;
+                
+
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 2px;
+                    left: 7px;
+                    width: 6px;
+                    height: 12px;
+                    border-bottom: 2px solid @white;
+                    border-right: 2px solid @white;
+                    transform: rotate(45deg);
+                }
             }
         }
     }
@@ -30,9 +36,11 @@
         width: 24px;
         height: 24px;
         box-sizing: border-box;
-        border: 1px solid @black;
+        
         border-color: transparent;
-        transition: background-color 0.2s;
+        
+        border: 1px solid @black;  
+        transition: background-color 0.2s;  
     }
 
     &_label {

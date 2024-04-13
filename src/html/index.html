@@ -25,7 +25,9 @@
 
                 </header>
                 <section class="offers home_offers"></section>
-                <section class="about home_about"></section>
+
+                @@include('blocks/about.html', (class: 'home_about'))
+                
                 <section class="upcoming home_upcoming"></section>
                 <section class="listing home_listing"></section>
                 <section class="contacts home_contacts"></section>
@@ -35,6 +37,8 @@
 
         </main>
         
+
+        @@include('events.html')
 
         @@include('blocks/page-footer.html')
 
