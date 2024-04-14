@@ -26,11 +26,11 @@
                 </header>
                 <section class="offers home_offers"></section>
 
-                @@include('blocks/about.html', (class: 'home_about'))
+                @@include('blocks/about.html', {class: 'home_about'})
                 
                 <section class="upcoming home_upcoming"></section>
                 <section class="listing home_listing"></section>
-                <section class="contacts home_contacts"></section>
+                @@include('blocks/contacts.html', {class: 'home_contacts'})
 
                 <div class="doit home-doit"></div>
             </div>
@@ -38,7 +38,7 @@
         </main>
         
 
-        @@include('events.html')
+        
 
         @@include('blocks/page-footer.html')
 

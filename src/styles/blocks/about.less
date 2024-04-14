@@ -1,9 +1,7 @@
 .about {
-    &_block {
-        display: flex;
-        flex-direction: column;
-    }
-
+   
+    padding-bottom: 90px;
+    
     &_container {
         .container;
     }
@@ -39,24 +37,12 @@
         color: @black;
         max-width: 870px;
         &--2 {
-            &--2 {
-                grid-area: text;
-            }
+            margin-left: auto;
+            grid-area: text;
         }
         
-    }
-
-    &_picture {
-        grid-area: picture;
-        position: relative;
-        display: block;
-        width: 65.217%;
-
-        &::before {
-            content: '';
-            display: block;
-            width: 100%;
-            padding-top: 66.322%;
+        &--mb90 {
+            margin-bottom: 90px;
         }
     }
 
@@ -69,6 +55,12 @@
         object-fit: contain;
     }
 
+    &_block {
+        display: flex;
+        flex-direction: column;
+    }
+
+
     &_block2 {
         display: grid;
         grid-template-areas: 
@@ -76,18 +68,41 @@
             "title title picture2"
             "text text text";
         gap: 60px;
+        grid-template-columns: 1fr 1fr 404px;
         
 
     }
 
+    &_block3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 60px;
+    }
+
+    &_picture {
+        grid-area: picture1;
+        position: relative;
+        display: block;
+        // width: 65.217%;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 100%;
+            padding-top: 66.322%;
+        }
+    }
+
+
     &_picture2 {
         grid-area: picture2;
-        margin-top: -280px;
+        // margin-top: -280px;
         align-self: flex-end;
         position: relative;
         display: block;
-        max-width: 404px;
-        width: 30.384%;
+        // max-width: 404px;
+        // width: 30.384%;
 
         &::before {
             content: '';
@@ -95,5 +110,44 @@
             width: 100%;
             padding-top: 122.029%;
         }
+    }
+
+    &_picture3 {
+        display: block;
+        position: relative; 
+        box-sizing: border-box;
+        max-width: 930px;
+        width: 100%;
+        padding: 18px 9px 0 49px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 65%;
+            background-color: @red;
+        }
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            padding-top: 40.860%;
+        }
+    }
+
+    &_img2 {
+        position: absolute;
+        top: 18px;
+        left: 49px;
+        right: 9px;
+        bottom: 0;
+        width: calc(100% - 58px);
+        object-fit: contain;
+    }
+
+    &_block3_wrapper {
+        max-width: 344px;
+        width: 100%;
     }
 }
