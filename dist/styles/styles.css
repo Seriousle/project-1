@@ -107,7 +107,7 @@ textarea {
   color: #ffffff;
 }
 .section-title-one {
-  margin: 0 0 150px;
+  margin: 0 auto 150px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 7px 45px 9px;
@@ -128,9 +128,6 @@ textarea {
           box-sizing: border-box;
   width: 100%;
   min-width: 624px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -492,7 +489,7 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -60px -120px;
+  margin: -60px -30.5px;
 }
 .events {
   padding: 140px 0 100px;
@@ -737,6 +734,92 @@ textarea {
 .pp_form {
   margin: auto;
   max-width: 870px;
+}
+.about_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about_container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.about_title {
+  margin: 0 0 50px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  color: #1f1e1e;
+}
+.about_title--w868 {
+  max-width: 868px;
+  width: 100%;
+}
+.about_title--2 {
+  grid-area: title;
+}
+.about_text {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 0 0 100px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #1f1e1e;
+  max-width: 870px;
+}
+.about_text--2--2 {
+  grid-area: text;
+}
+.about_picture {
+  grid-area: picture;
+  position: relative;
+  display: block;
+  width: 65.217%;
+}
+.about_picture::before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 66.322%;
+}
+.about_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.about_block2 {
+  display: grid;
+  grid-template-areas: "picture1 picture1 picture2" "title title picture2" "text text text";
+  gap: 60px;
+}
+.about_picture2 {
+  grid-area: picture2;
+  margin-top: -280px;
+  align-self: flex-end;
+  position: relative;
+  display: block;
+  max-width: 404px;
+  width: 30.384%;
+}
+.about_picture2::before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 122.029%;
 }
 .home {
   padding: 100px 0;
