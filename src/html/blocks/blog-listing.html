@@ -1,27 +1,42 @@
-<!DOCTYPE html>
-<html lang="ru">
 
-    @@include('blocks/head.html')
 
-    <body class="body">
-
-        @@include('blocks/page-header.html')
-
-        <main class="main">
-            <div class="home">
-
-            <!-- прочая разметка -->
-
+<section class="blog-listing @@class">
+    <div class="blog-listing_container">
+        <h2 class="blog-listing_title section-title-one">Блог</h2>
+        <div class="blog-listing_article">
             <!-- prettier-ignore -->
-            @@include('blocks/blog-listing.html', {"class": "home__listing"})
+            @@loop('article-card.html', [
+                {
+                "class": "blog-listing_article_card",
+                "img": "assets/images/blog/first.jpg",
+                "alt": "Theatre Photosession",
+                "title": "Фотосессия в стенах Театра драмы",
+                "descr": "Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было ",
+                "time": "26.11.2021",
+                "datetime": "2021-11-26T00:00"
+                },
 
-            <!-- прочая разметка -->
+                {
+                    "class": "blog-listing_article_card",
+                    "img": "assets/images/blog/second.jpg",
+                    "alt": "Theatre Photosession",
+                    "title": "Выставка VR в Томске",
+                    "descr": "Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.",
+                    "time": "05.11.2022",
+                    "datetime": "2022-11-05T00:00"
+                },
 
-            </div>
-        </main>
-
-    @@include('blocks/page-footer.html')
-
-    </body>
-
-</html>
+                {
+                    "class": "blog-listing_article_card",
+                    "img": "assets/images/blog/third.jpg",
+                    "alt": "Theatre Photosession",
+                    "title": "Rocking radio в заброшенном ангаре",
+                    "descr": "15 электрогенераторов, километры проводов и пару тонн света. Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска.",
+                    "time": "01.11.2022",
+                    "datetime": "2022-11-01T00:00"
+                }
+            ])
+        </div>
+        <a href="#" class="blog-listing__link link">Смотреть все</a>
+    </div>
+  </section>
