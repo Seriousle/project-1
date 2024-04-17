@@ -1,9 +1,27 @@
 .blog-listing {
 
+    box-sizing: border-box;
+
     &_container {
         .container;
+        
     }
 
-    display: flex;
-    flex-wrap: wrap;
+    &_border {
+        display: flex;
+        margin: 60px 40px 60px 40px;
+        background-color: @black;
+
+        &::before,
+        &::after {
+            content: '';
+            flex-grow: 1;
+            height: 1px;
+            width: 1257px;
+        }
+        
+
+    }
+
+
 }
