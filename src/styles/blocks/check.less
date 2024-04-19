@@ -4,6 +4,25 @@
     padding-left: 40px;
     display: block;
 
+    &--red {
+        color: @red;
+        .check_mark {
+            border-color: @red;
+        }
+        .check_input {
+            &:checked {
+                & ~ .check_mark {
+                    background-color: @red;
+                }
+            }
+        }
+    }
+
+    &--disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
     &_input {
 
         .is-hidden;

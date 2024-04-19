@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    @@include('blocks/head.html')
+
+    <body class="body">
+        
+        @@include('blocks/page-header.html')
+        <main class="main">
+
+            @@include('blocks/breadcrumbs.html')
+            
+            
+            <article class="event">
+
+                <div class="event_container">
+                    <div class="event_content content"></div>
+                    <!-- pretier-ignore -->
+                    @@include('blocks/reserve.html', {"class": "event_reserve"})
+
+
+                </div>
+
+                
+            </article>
+        </main>
+        
+
+        
+
+        @@include('blocks/page-footer.html')   
+
+    </body>
+</html>

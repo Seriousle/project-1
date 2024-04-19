@@ -1,0 +1,59 @@
+<form class="reserve @@class">
+    <div class="reserve_cheks">
+        <h4 class="reserve_section-title">Забронировать столик</h4>
+
+        <label for="" class="reserve_check check check--red">
+            <input type="checkbox" name="table_1" class="check_input"/>
+            <span class="check_mark"></span>
+            <span class="check_label">1 стол</span>
+        </label>
+
+        <label class="reserve_check check">
+            <input type="checkbox" name="table_2" class="check_input"/>
+            <span class="check_mark"></span>
+            <span class="check_label">2 стол</span>
+        </label>
+
+        <!-- Еще чекбоксы -->
+
+        <label class="reserve_check check check--disabled">
+            <input type="checkbox" name="table_5" class="check_input" disabled/>
+            <span class="check_mark"></span>
+            <span class="check_label">5 стол</span>
+        </label>
+
+        <!-- Оставшиеся чекбоксы-->
+    </div>
+
+    <div class="reserve_scheme">
+        <div class="reserve_scheme-container">
+            <h4 class="reserve_scheme-title">Сцена</h4>
+
+            <div class="reserve_scheme-wrapper">
+                <div class="reserve_scheme-wrapper">@@include('scene.html')</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reserve_order">
+        <h4 class="reserve_section-title">Ваши пригласительные билеты</h4>
+
+        <div class="reserve_tickets-list">
+            <div class="reserve_tickets">
+                <div class="reserve_qty" data-caption="шт." data-price="1400">0</div>
+                <div class="reserve_sum" data-currency="₽">0</div>
+            </div>
+
+            <div class="reserve_tickets">
+                <div class="reserve_qty" data-caption="шт." data-price="1250">0</div>
+                <div class="reserve_sum" data-currency="₽">0</div>
+            </div>
+        </div>
+        <div class="reserve_total"data-caption="Сумма" data-currency="₽">0</div>
+
+        <button type="submit" class="btn btn--red reserve_submit">
+            Купить билеты
+        </button>
+    </div>
+
+</form>

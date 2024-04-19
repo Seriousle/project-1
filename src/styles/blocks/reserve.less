@@ -1,0 +1,80 @@
+.reserve {
+    display: grid;
+    gap: 65px 11%;
+    grid-template-columns: 405px calc(89% - 405px);
+    grid-template-areas: 
+        "checks scheme"
+        "order legend";
+        width: 100%;
+
+    &_checks {
+        grid-area: checks;
+    }
+
+    &_order {
+        grid-area: order;
+    }
+
+    &_scheme {
+        grid-area: scheme;
+    }
+
+    &_scheme {
+        grid-area: scheme;
+    }
+
+    &_scheme-wrapper {
+        position: relative;
+        width: 100%;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            padding-top: 51.15384%;
+        }
+        
+    }
+
+    &_scene {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &_tickets {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    &_qty {
+        &::after {
+            content: " " attr(data-caption) " | " attr(data-price);
+        }
+
+    }
+
+    &_sum {
+        &::after {
+            content: attr(data-currency);
+            margin-left: 4px;
+            font-size: 0.95em;
+        }
+    }
+
+    &_total {
+        &::before {
+            content: attr(data-caption);
+            margin-right: 30px;
+        }
+
+        &::after {
+            content: attr(data-currency);
+            margin-left: 4px;
+            font-size: 0.95em;
+        }
+    }
+}   
