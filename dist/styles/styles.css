@@ -425,6 +425,34 @@ textarea {
   padding-right: 40px;
   margin-top: 40px;
 }
+.breadcrumbs_link {
+  display: inline;
+  margin-right: 10px;
+  color: #1f1e1e;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.breadcrumbs_link::after {
+  content: '/';
+  position: relative;
+  left: 4px;
+  display: inline-block;
+  width: 0;
+  pointer-events: none;
+  color: #1f1e1e;
+}
+.breadcrumbs_link:hover {
+  color: #bc3324;
+}
+.breadcrumbs_link:last-child {
+  margin-right: 0;
+}
+.breadcrumbs_link:last-child::after {
+  display: none;
+}
 .form_list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -723,8 +751,14 @@ textarea {
 .reserve_scheme {
   grid-area: scheme;
 }
-.reserve_scheme {
+.reserve_legend {
   grid-area: scheme;
+}
+.reserve_section-title {
+  margin: 0 0 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
 }
 .reserve_scheme-wrapper {
   position: relative;
@@ -1410,6 +1444,11 @@ textarea {
   pointer-events: none;
   overflow: hidden !important;
   white-space: nowrap !important;
+}
+@media (max-width: 767px) {
+  .breadcrumbs {
+    display: none;
+  }
 }
 @media (hover: hover) {
   .btn:hover {
