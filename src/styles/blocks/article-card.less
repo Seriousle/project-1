@@ -19,6 +19,14 @@
         margin-right: 60px;
         font-size: 0;
         text-decoration: none;
+        &:hover {
+            & ~ .article-card_info {
+                .article-card_title-link {
+                    color: @red;
+                    text-decoration-color: @red;
+                }
+            }
+        }
     }
 
     &_picture {
@@ -50,6 +58,7 @@
         position: relative;
         display: flex;
         flex-direction: column;
+        
         width: 100%;
         padding-top: 30px;
         padding-bottom: 30px;
@@ -62,10 +71,12 @@
         font-size: 16px;
         line-height: 22px;
     }
+
     &_title-link,
     &_description {
         max-width: 470px;
     }
+    
     &_title-link {
         margin: auto 0 40px;
         color: @black;
@@ -88,6 +99,7 @@
         font-size: 16px;
         line-height: 22px;
     }
+
     &_arrow {
         position: absolute;
         right: 0;

@@ -4,4 +4,110 @@
     &_container {
         .container;
     }
+
+    &_header {
+        .container;
+        margin-bottom: 80px;
+    }
+
+    &_about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media @bw768 {
+            flex-wrap: wrap;
+        }
+    }
+
+    &_info {
+        flex-shrink: 0;
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-end;
+        padding: 13px 0;
+        font-family: @font3;
+        font-weight: 300;
+        text-align: right;
+        text-transform: uppercase;
+
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 140px;
+            max-width: 100%;
+            height: 1px;
+            right: 0;
+            background-image: linear-gradient(
+                270deg, #1c1b1b 0%, rgba(255, 255, 255, 0) 82.86%
+            );
+            
+        }
+
+        &::before {
+            top: 0;
+
+        }
+
+        &::after {
+            bottom: 0;
+        }
+        &:last-child {
+            align-items: flex-start;
+            text-align: left;
+            left: 0;
+            right: auto;
+
+            &::before,
+            &::after {
+                background-image: linear-gradient(
+                    90deg, #1c1b1b 0%, rgba(255, 255, 255, 0) 82.86%
+                );
+            }
+        }
+    }
+
+    &_time {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 36px;
+        &[datetime] {
+            &::after {
+                content: attr(data-caption);
+                margin-left: 10px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+
+    &_info-text {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 700;
+
+    }
+
+    &_picture {
+        display: block;
+        width: 497px;
+        margin: 0 50px;
+    }
+
+    &_image {
+        display: block;
+        width: 100%;
+    }
+
+    &_content {
+        max-width: 830px;
+        margin-bottom: 80px;
+    }
+    
 }

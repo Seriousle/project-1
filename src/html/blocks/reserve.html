@@ -1,6 +1,6 @@
 <form class="reserve @@class">
     <div class="reserve_cheks">
-        <h4 class="reserve_section-title">Забронировать столик</h4>
+        <h4 class="reserve_section-title reserve_section-title--mb30">Забронировать столик</h4>
 
         <label for="" class="reserve_check check check--red">
             <input type="checkbox" name="table_1" class="check_input"/>
@@ -30,7 +30,7 @@
             <h4 class="reserve_scheme-title">Сцена</h4>
 
             <div class="reserve_scheme-wrapper">
-                <div class="reserve_scheme-wrapper">@@include('scene.html')</div>
+                @@include('scene.html')
             </div>
         </div>
     </div>
@@ -67,6 +67,11 @@
             </div>
         </div>
         
-        <div class="reserve_notation"></div>
+        <div class="reserve_notation">
+            <h4 class="reserve_section-title">Примечание</h4>
+
+            <div class="reserve_note reserve_note--free">доступные места</div>
+            <div class="reserve_note reserve_note--booked">забронировано</div>
+        </div>
     </div>
 </form>
