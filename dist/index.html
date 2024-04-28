@@ -60,10 +60,14 @@
       <div class="page_header_right-block">
         <a href="#" class="button page-header_user-button">
           Войти
+        </a>
+        <a href="#" class="page-header_user-menu">
           <svg class="page-header_user-icon" width="21" height="18">
             <use xlink:href="assets/icons/symbols.svg#user"></use>
           </svg>
         </a>
+
+
       </div>
 
       <button type="button" class="page-header_nav-toggle" id="js-navToggle"></button>
@@ -88,6 +92,16 @@
           место для настоящего
         </p>
 
+        <p class="main-header_want">
+          я хочу:
+        </p>
+        <button type="button" class="main_btn btn btn--red" id="js-eventOpenBtn">
+          Провести мероприятие
+        </button>
+
+        <button type="button" class="main_btn btn">
+          Стать арендатором
+        </button>
 
 
       </header>
@@ -312,10 +326,10 @@
       </div>
     </div>
   </footer>
-  <div class="pp" id="eventPP">
+  <div class="pp" id="js-eventPP">
     <div class="pp_container">
       <div class="pp_sticky-close">
-        <button type="button" class="pp_sticky-btn">
+        <button type="button" title="Закрыть" class="pp_sticky-btn js-ppCloseBtn">
           <svg class="pp_btn-icon" width="24" height="24">
             <use xlink:href="assets/icons/symbols.svg#x"></use>
           </svg>
@@ -441,7 +455,7 @@
               <button type="submit" class="form_btn btn">
                 Отправить
               </button>
-              <button type="submit" class="form_btnz form_btn--bn btn">
+              <button type="submit" class="form_btnz form_btn--bn btn js-ppCloseBtn">
                 Закрыть
               </button>
             </div>
@@ -452,6 +466,8 @@
 
     </div>
   </div>
+
+  <script src="scripts/main.min.js"></script>
 
 </body>
 

@@ -27,6 +27,17 @@
         &--2 {
             grid-area: title;
         }
+
+        
+        @media @bw1020 {
+            font-size: 26px;
+            margin: 40px 0 0;
+            max-width: 550px; 
+            width: 100%;
+            align-self: center;
+            
+            
+         }
     }
 
     &_text {
@@ -39,11 +50,18 @@
         &--2 {
             margin-left: auto;
             grid-area: text;
+            @media @bw1020 {
+                font-size: 16px;
+                max-width: 400px;
+                margin: 0 0 50px;
+
+             }
         }
         
         &--mb90 {
             margin-bottom: 90px;
         }
+        
     }
 
     &_img {
@@ -70,6 +88,28 @@
         gap: 60px;
         grid-template-columns: 1fr 1fr 404px;
         
+        
+        @media @bw1020 {
+            grid-template-areas: 
+            "picture1 picture1 picture1"
+            "title title picture2"
+            "text text picture2";
+            margin: 0 0 50px;
+            grid-template-columns: 0.5fr 0.5fr 350px;
+            grid-template-rows: auto auto 170px;
+            gap: 40px;
+            
+         }
+
+         @media @bw960 {
+            grid-template-areas: 
+            "picture1 picture1 picture1"
+            "title title picture2"
+            "text text picture2";
+            margin: 0 0 50px;
+            grid-template-columns: 0.5fr 0.5fr 300px;
+            gap: 40px;
+         }
 
     }
 
@@ -110,6 +150,7 @@
             width: 100%;
             padding-top: 122.029%;
         }
+
     }
 
     &_picture3 {
