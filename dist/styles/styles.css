@@ -32,7 +32,7 @@ body {
   background-position: 0 0, 0 0;
   background-size: auto, 100% auto;
   background-repeat: repeat, repeat-y;
-  color: #1F1E1E;
+  color: #1f1e1e;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1516,7 +1516,7 @@ textarea {
   padding-right: 40px;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   line-height: normal;
   font-weight: 400;
   font-size: 45px;
@@ -1530,6 +1530,39 @@ textarea {
   max-width: 940px;
   width: 100%;
 }
+.main-header_want {
+  margin-top: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  text-transform: "Lora", serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+}
+.main_btn {
+  display: block;
+  margin: auto;
+  text-align: center;
+  border: 1px solid #1f1e1e;
+  background-color: transparent;
+  padding: 15px 40px;
+  color: #1f1e1e;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  -webkit-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  cursor: pointer;
+}
+.main_btn:active {
+  background-color: #1f1e1e;
+  color: #ffffff;
+}
+.main_btn--red:active {
+  background-color: #bc3324;
+  color: #ffffff;
+}
 .pp {
   position: fixed;
   top: 0;
@@ -1541,6 +1574,7 @@ textarea {
   padding: 90px 50px 50px;
   overflow-y: auto;
   z-index: 110;
+  display: none;
   background-color: #dedede;
 }
 @supports ((-webkit-backdrop-filter: blur(25px)) or (backdrop-filter: blur(25px))) {
@@ -2199,6 +2233,14 @@ textarea {
   }
   .page-footer_nav_link:hover {
     color: #bc3324;
+  }
+  .main_btn:hover {
+    background-color: #1f1e1e;
+    color: #ffffff;
+  }
+  .main_btn--red:hover {
+    background-color: #bc3324;
+    color: #ffffff;
   }
   .pp_sticky-btn:hover {
     background-color: #a51505;
