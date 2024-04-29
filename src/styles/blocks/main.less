@@ -2,6 +2,14 @@
     
     &-header {
         padding: 100px 0;
+        @media @bw960 {
+            padding: 40px 0 65px 0;
+        }
+
+        @media @bw400 {
+            padding: 40px 0 50px 0;
+        }
+
 
     }
 
@@ -41,6 +49,18 @@
         font-weight: 400;
         font-size: 45px;
         color: @black;
+        @media @bw960 {
+            padding: 0;
+        }
+        @media @bw768 {
+            font-size: 30px;
+            padding: 0;
+        }
+        @media @bw400 {
+            font-size: 13px;
+            padding: 0;
+            
+        }
     }
 
     &-header_title {
@@ -75,7 +95,7 @@
     }
 
     &_btn {
-        display: block;
+        display: flex;
         margin: auto;
         text-align: center;
         border: 1px solid @black;

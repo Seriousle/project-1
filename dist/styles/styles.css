@@ -1540,7 +1540,9 @@ textarea {
   line-height: 30px;
 }
 .main_btn {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: auto;
   text-align: center;
   border: 1px solid #1f1e1e;
@@ -2049,11 +2051,21 @@ textarea {
   }
 }
 @media (max-width: 959px) {
+  .main-header {
+    padding: 40px 0 65px 0;
+  }
+  .main-header_title,
+  .main-header_text {
+    padding: 0;
+  }
   .about_block2 {
     grid-template-areas: "picture1 picture1 picture1" "title title picture2" "text text picture2";
     margin: 0 0 50px;
     grid-template-columns: 0.5fr 0.5fr 300px;
     gap: 40px;
+  }
+  .home {
+    padding: 40px 0 65px 0;
   }
 }
 @media (max-width: 767px) {
@@ -2096,9 +2108,19 @@ textarea {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .page-header {
+    height: 111px;
+  }
   .page-header_container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .page-header_container {
+    grid-template-columns: 0.7fr 0 0;
+  }
+  .page-header_logo {
+    width: 152px;
+    height: 111px;
   }
   .page-header_nav-toggle {
     margin-left: 5px;
@@ -2106,6 +2128,11 @@ textarea {
   .page-footer_container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .main-header_title,
+  .main-header_text {
+    font-size: 30px;
+    padding: 0;
   }
   .table {
     display: block;
@@ -2213,6 +2240,44 @@ textarea {
   .about_container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+@media (max-width: 649px) {
+  .page-header_container {
+    grid-template-columns: 0.65fr 0 0;
+  }
+}
+@media (max-width: 499px) {
+  .page-header_container {
+    grid-template-columns: 0.5fr 0 0;
+  }
+}
+@media (max-width: 399px) {
+  .page-header {
+    height: 70px;
+  }
+  .page-header_container {
+    grid-template-columns: 130px 0 0;
+  }
+  .page-header_logo {
+    width: 96px;
+    height: 70px;
+  }
+  .main-header {
+    padding: 40px 0 50px 0;
+  }
+  .main-header_title,
+  .main-header_text {
+    font-size: 13px;
+    padding: 0;
+  }
+  .home {
+    padding: 40px 0 50px 0;
+  }
+}
+@media (max-width: 369px) {
+  .page-header_container {
+    grid-template-columns: 100px 0 0;
   }
 }
 @media (min-width: 1020px) {
