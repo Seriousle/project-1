@@ -14,15 +14,47 @@
     const eventOpenBtn = document.querySelector("#js-eventOpenBtn");
 
     if (eventPP && eventOpenBtn) {
-        eventOpenBtn.addEventListener("click", function() {
-            root.classList.add("show-event-popup");
-        });
 
-        eventPP.addEventListener("click", function(event) {
-            if (event.target  === this || event.target.classList.contains("#js-ppCloseBtn")) {
+        const closeEventPP = function(event) {
+            function close() {
                 root.classList.remove("show-event-popup");
             }
+
+            switch (event.type) {
+                case "keyup":
+                    if (event.key === "Escape" || event.keyCode === 27) close();
+                    break;
+                case "click":
+                    if (event.target === this || event.target.classList.contains("#js-ppCloseBtn")) close();
+                    break;
+
+
+            }
+        };
+
+        eventOpenBtn.addEventListener("click", function() {
+            root.classList.add("show-event-popup");
+
+            document.addEventListener("keyup", closeEventPP);
+            eventPP.addEventListener("click", closeEventPP);
         });
+
+        
+        // eventOpenBtn.addEventListener("click", function() {
+        //     root.classList.add("show-event-popup");
+        // });
+
+        // eventPP.addEventListener("click", function(event) {
+        //     if (event.target  === this || event.target.classList.contains("#js-ppCloseBtn")) {
+        //         root.classList.remove("show-event-popup");
+        //     }
+        // });
+        // document.addEventListener("keyup", function(event) {
+        //     if (event.key === "Escape" ||event.keyCode === 27) {
+        //         console.log(event);
+        //         root.classList.remove("show-event-popup");
+        //     }
+        // });
 
     }
 })();
