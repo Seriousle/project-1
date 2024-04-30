@@ -26,17 +26,24 @@
         
         &--2 {
             grid-area: title;
+            align-self: flex-end;
+            @media @bw1020 {
+                margin: 0;
+                max-width: 550px; 
+                width: 100%;
+            }
+
         }
 
-        
         @media @bw1020 {
             font-size: 26px;
-            margin: 40px 0 0;
-            max-width: 550px; 
-            width: 100%;
-            align-self: center;
-            
-            
+
+        }
+
+
+         @media @bw370 {
+            font-size: 18px;
+            margin: 0 0 30px;
          }
     }
 
@@ -47,13 +54,20 @@
         font-weight: 400;
         color: @black;
         max-width: 870px;
+
+        @media @bw768 {
+            font-size: 16px;
+            margin: 0 0 60px;
+        }
+        
         &--2 {
             margin-left: auto;
             grid-area: text;
             @media @bw1020 {
-                font-size: 16px;
+                font-size: 18px;
                 max-width: 400px;
-                margin: 0 0 50px;
+                
+                align-self: auto;
 
              }
         }
@@ -71,6 +85,8 @@
         width: 100%;
         height: 100%;
         object-fit: contain;
+
+        
     }
 
     &_block {
@@ -96,19 +112,9 @@
             "text text picture2";
             margin: 0 0 50px;
             grid-template-columns: 0.5fr 0.5fr 350px;
-            grid-template-rows: auto auto 170px;
+            grid-template-rows: auto;
             gap: 40px;
             
-         }
-
-         @media @bw960 {
-            grid-template-areas: 
-            "picture1 picture1 picture1"
-            "title title picture2"
-            "text text picture2";
-            margin: 0 0 50px;
-            grid-template-columns: 0.5fr 0.5fr 300px;
-            gap: 40px;
          }
 
     }
@@ -149,6 +155,14 @@
             display: block;
             width: 100%;
             padding-top: 122.029%;
+        }
+
+        @media @bw960 {
+            max-width: 100%;
+            height: auto;
+            &::before {
+                max-width: 100%;
+            }
         }
 
     }

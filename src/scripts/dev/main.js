@@ -17,6 +17,9 @@
 
         const closeEventPP = function(event) {
             function close() {
+                document.removeEventListener("keyup", closeEventPP);
+                eventPP.removeEventListener("click", closeEventPP);
+
                 root.classList.remove("show-event-popup");
             }
 
@@ -39,7 +42,7 @@
             eventPP.addEventListener("click", closeEventPP);
         });
 
-        
+
         // eventOpenBtn.addEventListener("click", function() {
         //     root.classList.add("show-event-popup");
         // });

@@ -1770,6 +1770,7 @@ textarea {
 }
 .about_title--2 {
   grid-area: title;
+  align-self: flex-end;
 }
 .about_text {
   -ms-flex-item-align: end;
@@ -2021,24 +2022,25 @@ textarea {
   .page-header_user-button {
     display: none;
   }
-  .about_title {
-    font-size: 26px;
-    margin: 40px 0 0;
+  .about_title--2 {
+    margin: 0;
     max-width: 550px;
     width: 100%;
-    -ms-flex-item-align: center;
-        align-self: center;
+  }
+  .about_title {
+    font-size: 26px;
   }
   .about_text--2 {
-    font-size: 16px;
+    font-size: 18px;
     max-width: 400px;
-    margin: 0 0 50px;
+    -ms-flex-item-align: auto;
+        align-self: auto;
   }
   .about_block2 {
     grid-template-areas: "picture1 picture1 picture1" "title title picture2" "text text picture2";
     margin: 0 0 50px;
     grid-template-columns: 0.5fr 0.5fr 350px;
-    grid-template-rows: auto auto 170px;
+    grid-template-rows: auto;
     gap: 40px;
   }
   .show-nav body {
@@ -2058,17 +2060,22 @@ textarea {
   .main-header_text {
     padding: 0;
   }
-  .about_block2 {
-    grid-template-areas: "picture1 picture1 picture1" "title title picture2" "text text picture2";
-    margin: 0 0 50px;
-    grid-template-columns: 0.5fr 0.5fr 300px;
-    gap: 40px;
+  .about_picture2 {
+    max-width: 100%;
+    height: auto;
+  }
+  .about_picture2::before {
+    max-width: 100%;
   }
   .home {
     padding: 40px 0 65px 0;
   }
 }
 @media (max-width: 767px) {
+  .section-title-one {
+    font-size: 24px;
+    padding: 10px 40px 10px;
+  }
   .breadcrumbs {
     padding-left: 20px;
     padding-right: 20px;
@@ -2241,6 +2248,10 @@ textarea {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .about_text {
+    font-size: 16px;
+    margin: 0 0 60px;
+  }
 }
 @media (max-width: 649px) {
   .page-header_container {
@@ -2278,6 +2289,10 @@ textarea {
 @media (max-width: 369px) {
   .page-header_container {
     grid-template-columns: 100px 0 0;
+  }
+  .about_title {
+    font-size: 18px;
+    margin: 0 0 30px;
   }
 }
 @media (min-width: 1020px) {
